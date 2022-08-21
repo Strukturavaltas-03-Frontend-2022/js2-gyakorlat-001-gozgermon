@@ -1,5 +1,5 @@
 const taggedTemplate=(text,...values)=>
-    text.map((text,index)=>`<em>${text}</em>${values[index] ? `<strong>${values[index]}</strong>` : ''}`).join('')
+    text.map((text,index)=>`${text==' ' ? ' ':`<em>${text}</em>`}${values[index] ? `<strong>${values[index]}</strong>` : ''}`).join('')
    //text.map((text)=>`<em>${text}<\em>`)
   // console.log(text.map((text,index)=>`<em>${text}</em>${values[index] ? `<strong>${values[index]}</strong>` : ''}`).join(''))
 
